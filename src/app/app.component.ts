@@ -8,13 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'bytebank';
-
-  constructor(private service: TransferenciaService){
-
-  }
-
-  transferir($event){
-    this.service.adicionar($event);
-  }
+  constructor(private service: TransferenciaService){ }
 }
